@@ -1,0 +1,1 @@
+{ voltage_1n: 245, voltage_2n: 245.9400024, voltage_3n: 245.8500061, voltage_1n: 245  }

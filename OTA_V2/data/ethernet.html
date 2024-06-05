@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/skeleton.css">
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/style.css">
+  <title>Login Page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="sidebar-toggle">&#9776;</div>
+        <img src="data:image/png;base64,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" class="logo-img">
+        <div class="header-title">Data logger</div>
+        <div class="logout">&#10150;</div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="three columns sidebar">
+                <ul>
+                    <li><a href="/dash">Dashboard</a></li>
+                    <li><a href="/modbus">Modbus Configuration</a></li>
+                    <li><a href="/mqtt">MQTT Configuration</a></li>
+                    <li><a href="/ethernet" class="selected">Ethernet Configuration</a></li>
+                    <li><a href="/wifi">Wifi Configuration</a></li>
+                    <li><a href="#">Reset</a></li>
+                    <li><a href="#">Restart</a></li>
+                </ul>
+            </div>
+            <div class="nine columns main-content">
+                <div class="card-container">
+                    <div class="card card-mqtt">
+                        <div class="card-header">
+                            <div class="card-title">MQTT Configuration</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="message"></div>
+                            <form id="ipConfigForm">
+                                <div class="form-label-input mb-3">
+                                    <label>IP Configuration</label>
+                                    <input type="radio" name="ipConfig" value="dhcp" id="dhcpRadio" checked> DHCP
+                                    <input type="radio" name="ipConfig" value="static" id="staticRadio"> Static
+                                </div>
+
+                                <!-- Static IP fields (initially disabled) -->
+                                <div class="form-label-input mb-3">
+                                    <label>DNS Server</label>
+                                    <input type="text" class="form-feild" id="dns" name="dns" placeholder="DNS Server" disabled>
+                                </div>
+                                <div class="form-label-input mb-3">
+                                    <label>Static IP Address</label>
+                                    <input type="text" class="form-feild" id="staticIP" name="staticIP" placeholder="Static IP Address" disabled>
+                                </div>
+                                <div class="form-label-input mb-3">
+                                    <label>Subnet Mask</label>
+                                    <input type="text" class="form-feild" id="subnetMask" name="subnetMask" placeholder="Subnet Mask" disabled>
+                                </div>
+                                <div class="form-label-input mb-3">
+                                    <label>Gateway</label>
+                                    <input type="text" class="form-feild" id="gateway" name="gateway" placeholder="Gateway" disabled>
+                                </div>
+                                <button type="button" class="button-40" onclick="updateIpConfig()">Update IP Configuration</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <footer class="footer">
+    <p>&copy; 2023 powered by SenseLive Technology. All rights reserved.</p>
+  </footer>
+    <script src="/script.js"></script>
+    <script>
+        // Get references to the radio buttons and static IP fields
+        const dhcpRadio = document.getElementById("dhcpRadio");
+        const staticRadio = document.getElementById("staticRadio");
+        const DNSField = document.getElementById("dns");
+        const staticIPField = document.getElementById("staticIP");
+        const subnetMaskField = document.getElementById("subnetMask");
+        const gatewayField = document.getElementById("gateway");
+
+        // Add event listeners to the radio buttons to enable/disable static IP fields
+        dhcpRadio.addEventListener("change", () => {
+            DNSField.disabled = true;
+            staticIPField.disabled = true;
+            subnetMaskField.disabled = true;
+            gatewayField.disabled = true;
+
+            DNSField.removeAttribute("required");
+            staticIPField.removeAttribute("required");
+            subnetMaskField.removeAttribute("required");
+            gatewayField.removeAttribute("required");
+        });
+
+        staticRadio.addEventListener("change", () => {
+            DNSField.disabled = false;
+            staticIPField.disabled = false;
+            subnetMaskField.disabled = false;
+            gatewayField.disabled = false;
+
+            DNSField.setAttribute("required", "required");
+            staticIPField.setAttribute("required", "required");
+            subnetMaskField.setAttribute("required", "required");
+            gatewayField.setAttribute("required", "required");
+        });
+
+        /*function updateIpConfig() {
+            const form = document.getElementById("ipConfigForm");
+            const messageDiv = document.getElementById("message");
+
+            // Check which radio button is selected
+            const ipConfig = dhcpRadio.checked ? "dhcp" : "static";
+
+            // Create an object to hold the data to be sent
+            const data = {
+                ipConfig: ipConfig,
+            };
+
+            // If static IP is selected, add the static IP fields to the data
+            if (ipConfig === "static") {
+                data.dns = DNSField.value;
+                data.staticIP = staticIPField.value;
+                data.subnetMask = subnetMaskField.value;
+                data.gateway = gatewayField.value;
+            }
+
+            if (!form.checkValidity()) {
+              messageDiv.textContent = "Please fill in all required fields.";
+              return;
+          }
+          
+            console.log(data);
+            // Send the data as JSON in a POST request
+            fetch("/update-ip", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            })
+            .then((response) => response.json())
+            .then((responseData) => {
+                if (responseData.status === "success") {
+                    messageDiv.textContent = "Configuration updated successfully.";
+                } else {
+                    messageDiv.textContent = "Failed to update configuration. Please check the input.";
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+        }*/
+        function updateIpConfig() {
+            const form = document.getElementById("ipConfigForm");
+            const messageDiv = document.getElementById("message");
+
+            // Check which radio button is selected
+            const ipConfig = dhcpRadio.checked ? "dhcp" : "static";
+
+            // Create a FormData object to hold the data to be sent
+            const formData = new FormData();
+            formData.append("ipConfig", ipConfig);
+
+            // If static IP is selected, add the static IP fields to the FormData
+            if (ipConfig === "static") {
+                formData.append("dns", DNSField.value);
+                formData.append("staticIP", staticIPField.value);
+                formData.append("subnetMask", subnetMaskField.value);
+                formData.append("gateway", gatewayField.value);
+            }
+
+            if (!form.checkValidity()) {
+                messageDiv.textContent = "Please fill in all required fields.";
+                return;
+            }
+
+            // Send the data as FormData in a POST request
+            fetch("/update-ip", {
+                method: "POST",
+                body: formData,
+            })
+            .then((response) => response.json())
+            .then((responseData) => {
+                if (responseData.status === "success") {
+                    messageDiv.textContent = "Configuration updated successfully.";
+                } else {
+                    messageDiv.textContent = "Failed to update configuration. Please check the input.";
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+        }
+
+    </script>
+</body>
+</html>

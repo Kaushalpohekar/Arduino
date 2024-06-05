@@ -1,0 +1,23 @@
+if (!mqttConnected) {
+    reconnect();
+  }
+
+  if (WiFi.getMode() == WIFI_MODE_STA) {
+    if (mqttConnected) {
+      unsigned long currentMillis = millis();
+      if (currentMillis - lastPublishTime >= publishInterval) {
+        lastPublishTime = currentMillis;
+  
+        String data = readFile("/data.txt");
+  
+        if (client.publish(mqttTopic, data.c_str())) {
+          Serial.println("Data published to MQTT");
+        } else {
+          Serial.print("Data publication failed, rc=");
+          Serial.print(client.state());
+          Serial.println("Retrying...");
+        }
+      }
+    }
+  }
+  
